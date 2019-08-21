@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190821 12:26:09.662" rpa="false">
+<suite id="s1" name="TestSuitOne" source="D:\Security\Testautothon\testautothon\web\01_Test_Cases\TestSuitOne.robot">
+<test id="s1-t1" name="Hackothon">
+<kw name="Launch" library="Youtube">
+<arguments>
+<arg>${LOCALURL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://youtube.com</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190821 12:26:10.083" level="INFO">Opening browser 'Chrome' to base url 'https://youtube.com'.</msg>
+<status status="PASS" starttime="20190821 12:26:10.083" endtime="20190821 12:26:17.790"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190821 12:26:17.790" endtime="20190821 12:26:18.149"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Wait Until Element Is Visible</arg>
+<arg>xpath=//input[@id='search']</arg>
+<arg>timeout=10s</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//input[@id='search']</arg>
+<arg>timeout=10s</arg>
+</arguments>
+<status status="PASS" starttime="20190821 12:26:18.150" endtime="20190821 12:26:18.421"></status>
+</kw>
+<status status="PASS" starttime="20190821 12:26:18.149" endtime="20190821 12:26:18.421"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='search']</arg>
+<arg>step-inforum</arg>
+</arguments>
+<msg timestamp="20190821 12:26:18.422" level="INFO">Typing text 'step-inforum' into text field 'xpath=//input[@id='search']'.</msg>
+<status status="PASS" starttime="20190821 12:26:18.422" endtime="20190821 12:26:18.610"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//button[@id='search-icon-legacy']</arg>
+</arguments>
+<msg timestamp="20190821 12:26:18.611" level="INFO">Clicking element 'xpath=//button[@id='search-icon-legacy']'.</msg>
+<status status="PASS" starttime="20190821 12:26:18.611" endtime="20190821 12:26:18.727"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Wait Until Element Is Visible</arg>
+<arg>xpath=//h3[@id='channel-title']</arg>
+<arg>timeout=10s</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//h3[@id='channel-title']</arg>
+<arg>timeout=10s</arg>
+</arguments>
+<status status="PASS" starttime="20190821 12:26:18.727" endtime="20190821 12:26:19.458"></status>
+</kw>
+<status status="PASS" starttime="20190821 12:26:18.727" endtime="20190821 12:26:19.458"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//h3[@id='channel-title']</arg>
+</arguments>
+<msg timestamp="20190821 12:26:19.458" level="INFO">Clicking element 'xpath=//h3[@id='channel-title']'.</msg>
+<status status="PASS" starttime="20190821 12:26:19.458" endtime="20190821 12:26:19.843"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Wait Until Element Is Visible</arg>
+<arg>xpath=//div[@id='tabsContent']</arg>
+<arg>timeout=60s</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//div[@id='tabsContent']</arg>
+<arg>timeout=60s</arg>
+</arguments>
+<status status="PASS" starttime="20190821 12:26:19.844" endtime="20190821 12:26:20.839"></status>
+</kw>
+<status status="PASS" starttime="20190821 12:26:19.843" endtime="20190821 12:26:20.839"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="tabsContent"]/paper-tab[2]/div</arg>
+</arguments>
+<msg timestamp="20190821 12:26:20.840" level="INFO">Clicking element 'xpath=//*[@id="tabsContent"]/paper-tab[2]/div'.</msg>
+<status status="PASS" starttime="20190821 12:26:20.839" endtime="20190821 12:26:20.972"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Wait Until Element Is Enabled</arg>
+<arg>xpath=//a[@title='Big Data Testing']</arg>
+<arg>timeout=60s</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath=//a[@title='Big Data Testing']</arg>
+<arg>timeout=60s</arg>
+</arguments>
+<status status="PASS" starttime="20190821 12:26:20.972" endtime="20190821 12:26:21.960"></status>
+</kw>
+<status status="PASS" starttime="20190821 12:26:20.972" endtime="20190821 12:26:21.960"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets focus to element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@title='Big Data Testing']</arg>
+</arguments>
+<status status="PASS" starttime="20190821 12:26:21.960" endtime="20190821 12:26:21.994"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Wait Until Element Is Visible</arg>
+<arg>xpath=//a[@title='Big Data Testing']</arg>
+<arg>timeout=60s</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//a[@title='Big Data Testing']</arg>
+<arg>timeout=60s</arg>
+</arguments>
+<status status="PASS" starttime="20190821 12:26:21.995" endtime="20190821 12:26:22.023"></status>
+</kw>
+<status status="PASS" starttime="20190821 12:26:21.995" endtime="20190821 12:26:22.023"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@title='Big Data Testing']</arg>
+</arguments>
+<msg timestamp="20190821 12:26:22.024" level="INFO">Clicking element 'xpath=//a[@title='Big Data Testing']'.</msg>
+<status status="PASS" starttime="20190821 12:26:22.024" endtime="20190821 12:26:22.123"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Wait Until Element Is Visible</arg>
+<arg>xpath=//button[@class='ytp-button ytp-settings-button']</arg>
+<arg>timeout=60s</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//button[@class='ytp-button ytp-settings-button']</arg>
+<arg>timeout=60s</arg>
+</arguments>
+<status status="PASS" starttime="20190821 12:26:22.123" endtime="20190821 12:26:22.634"></status>
+</kw>
+<status status="PASS" starttime="20190821 12:26:22.123" endtime="20190821 12:26:22.634"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//button[@class='ytp-button ytp-settings-button']</arg>
+</arguments>
+<msg timestamp="20190821 12:26:22.634" level="INFO">Clicking element 'xpath=//button[@class='ytp-button ytp-settings-button']'.</msg>
+<status status="PASS" starttime="20190821 12:26:22.634" endtime="20190821 12:26:22.901"></status>
+</kw>
+<status status="PASS" starttime="20190821 12:26:10.083" endtime="20190821 12:26:22.902"></status>
+</kw>
+<tags>
+<tag>Hack</tag>
+</tags>
+<status status="PASS" starttime="20190821 12:26:10.082" endtime="20190821 12:26:22.902" critical="yes"></status>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" starttime="20190821 12:26:09.675" endtime="20190821 12:26:22.904"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Hack</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="TestSuitOne">TestSuitOne</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
